@@ -16,3 +16,7 @@ Interdiction formelle d'utiliser bootstrap et autres aberrations.
 
 Pour rendre le projet
 Votre projet doit impérativement être sur un git public et s'installer sur les périphériques.
+
+
+
+login et post

@@ -1,4 +1,25 @@
-svg.svg-inline--fa.fa-edit.fa-w-18.fa-lg {
+svg.svg-inline--fa.fa-edit.fa-w-18.fa-lg.mi {
     padding-left: 15px;
     color: rgba(0, 0, 0, 0.6);
+}
+
+.hm{
+    margin-left: 14%;
+    color: white;
+}
+.hi{
+    margin-left: 0!important;
+    color: white;
+}
+.ye{
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+}
+.ko{
+    margin-left: 8%;
+    position: absolute;
+
 }

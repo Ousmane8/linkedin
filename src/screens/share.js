@@ -24,7 +24,7 @@ const Share = () => {
             onChange={(e) => setContent(e.target.value)}
             type="text"
           ></StyledTextarea>
-          <button type="submit">Publier</button>
+          <StyledButton type="submit">Publier</StyledButton>
         </StyledForm>
       </div>
     </div>
@@ -40,10 +40,23 @@ const StyledForm = styled.form`
 const StyledTextarea = styled.textarea`
   margin: 50px 0px;
   border: 0px solid black;
-  height: 100px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 10px 10px 10px 20px;
-  width: 100%; ;
+  height: 400px;
+  border-bottom: 1px solid rgb(0 0 0 / 67%);
+  padding: 5px 10px 5px 20px;
+  width: 100%;
+  font-size: 16px;
 `;
-
+const StyledButton = styled.button`
+  background: black !important;
+  border-radius: 28px !important;
+  border: 2px solid #0a66c2;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  width: 50%;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+`;
 export default Share;

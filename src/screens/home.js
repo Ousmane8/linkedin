@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Nav from "../components/nav";
-import Footer from "../components/footer";
+import Footer from "../components/navbar";
 import styled from "styled-components";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ const Home = (props) => {
     <div>
       <Nav />
       <StyledDiv>
-        <FontAwesomeIcon icon="edit" size="lg" />
+        <FontAwesomeIcon icon="edit" size="lg" className="mi" />
         <StyledButtonG
           as="a"
           target="_blank"
@@ -24,8 +24,17 @@ const Home = (props) => {
         >
           Partagez ou postez votre contenu
         </StyledButtonG>
+
         {publications.map((publication, key) => {
-          return <div>{publication}</div>;
+          return (
+            <div>
+              <Wrapper>
+                <StyledUsername> Hello LinkedIn!</StyledUsername>
+                <StyledSpan></StyledSpan>
+                <StyledText>{publication}</StyledText>
+              </Wrapper>
+            </div>
+          );
         })}
       </StyledDiv>
       <Footer />
@@ -51,5 +60,27 @@ const StyledButtonG = styled.button`
   text-decoration: none;
   margin-left: 10px !important;
 `;
-
+const Wrapper = styled.section`
+  padding: 1.5%;
+  background: papayawhip;
+  margin-top: 5%;
+  margin-bottom: 5%;
+`;
+const StyledUsername = styled.h1`
+  font-size: 1.3em;
+  text-align: left;
+  color: palevioletred;
+  padding-left: 10px;
+`;
+const StyledSpan = styled.div`
+  border: 1px solid red;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+`;
+const StyledText = styled.text`
+  font-size: 1.2em;
+  text-align: justify;
+  color: black;
+`;
 export default Home;

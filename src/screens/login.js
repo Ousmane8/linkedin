@@ -38,7 +38,7 @@ const Login = ({ history }) => {
   }, []);
   return (
     <div>
-      <Header backgroundColor="green"> </Header>
+      <Header />
       <Signin submit={submit}></Signin>
     </div>
   );

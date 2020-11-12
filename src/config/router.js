@@ -8,6 +8,7 @@ import {
 
 import Login from "../screens/login";
 import Home from "../screens/home";
+import Share from "../screens/share";
 import PrivateRoute from "../utils/privateRoute";
 
 const Routes = () => {
@@ -16,6 +17,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Login} />
         <PrivateRoute path="/home" component={Home} />
+        <PrivateRoute path="/share" component={Share} />
         <Redirect to="/"></Redirect>
       </Switch>
     </Router>

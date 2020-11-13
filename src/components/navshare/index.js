@@ -9,13 +9,7 @@ const Navshare = (props) => {
       <StyledLogo src={logo} alt="Logo" />
       <StyledText>Partager ou Postez</StyledText>
 
-      <StyledInput
-        as="a"
-        target="_blank"
-        onClick={() => {
-          props.history.push("/home");
-        }}
-      >
+      <StyledInput as="a" target="_blank" href="#">
         <FontAwesomeIcon icon="times" size="2x" className="hi" />
       </StyledInput>
     </StyledBackgroundNav>

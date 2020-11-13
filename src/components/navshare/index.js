@@ -13,7 +13,7 @@ const Navshare = (props) => {
         as="a"
         target="_blank"
         onClick={() => {
-          props.history.push.goBack("/home");
+          props.history.push("/home");
         }}
       >
         <FontAwesomeIcon icon="times" size="2x" className="hi" />

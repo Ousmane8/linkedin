@@ -8,7 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Home = (props) => {
   const [publications, setPublications] = useState([]);
   useEffect(() => {
-    setPublications(JSON.parse(localStorage.getItem("publications")) || []);
+    //setPublications(JSON.parse(localStorage.getItem("publications")) || []);
+    let affichages = JSON.parse(localStorage.getItem("publications")) || [];
+    setPublications(affichages.reverse());
   }, []);
   return (
     <div>
@@ -29,7 +31,9 @@ const Home = (props) => {
           return (
             <div>
               <Wrapper>
-                <StyledUsername> Hello LinkedIn!</StyledUsername>
+                <StyledUsername>
+                  {localStorage.getItem("pseudo")}
+                </StyledUsername>
                 <StyledSpan></StyledSpan>
                 <StyledText>{publication}</StyledText>
               </Wrapper>

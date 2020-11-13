@@ -20,6 +20,7 @@ const submit = (e, formState, setErrorMessage, history) => {
   })
     .then((res) => {
       localStorage.setItem("token", res.headers["x-access-token"]);
+      localStorage.setItem("pseudo", formState.username);
       history.push("/home");
     })
     .catch((err) => {

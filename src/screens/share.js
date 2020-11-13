@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navshare from "../components/navshare";
 import styled from "styled-components";
 
-const Share = () => {
+const Share = (props) => {
   const [content, setContent] = useState("");
   const handlesubmit = (e) => {
     console.log(content);
@@ -13,6 +13,7 @@ const Share = () => {
     const publications = JSON.parse(localStorage.getItem("publications")) || [];
     publications.push(content);
     localStorage.setItem("publications", JSON.stringify(publications));
+    props.history.push("/home");
   };
   return (
     <div>

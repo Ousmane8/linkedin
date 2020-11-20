@@ -24,10 +24,6 @@ const Navbar = (props) => {
           <FontAwesomeIcon icon="briefcase" size="lg" className="ye" />
           Emplois
         </NavbarLink>
-        <NavbarLink href="#">
-          <FontAwesomeIcon icon="briefcase" size="lg" className="ye" />
-          Emplois
-        </NavbarLink>
       </Nav>
     </StyledBackgrounded>
   );
